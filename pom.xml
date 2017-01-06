@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.apache.lucene</groupId>
+    <artifactId>lucene-parent</artifactId>
+    <version>6.3.0</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <module-directory>lucene</module-directory>
+    </properties>
+
+    <modules>
+        <module>core</module>
+        <!--<module>backward-codecs</module>-->
+        <!--<module>codecs</module>-->
+        <!--<module>test-framework</module>-->
+        <!--<module>analysis</module>-->
+        <!--<module>benchmark</module>-->
+        <!--<module>classification</module>-->
+        <module>demo</module>
+        <!--<module>expressions</module>-->
+        <!--<module>facet</module>-->
+        <!--<module>grouping</module>-->
+        <!--<module>highlighter</module>-->
+        <!--<module>join</module>-->
+        <!--<module>memory</module>-->
+        <!--<module>misc</module>-->
+        <!--<module>queries</module>-->
+        <!--<module>queryparser</module>-->
+        <!--<module>replicator</module>-->
+        <!--<module>sandbox</module>-->
+        <!--<module>spatial</module>-->
+        <!--<module>spatial-extras</module>-->
+        <!--<module>spatial3d</module>-->
+        <!--<module>suggest</module>-->
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
