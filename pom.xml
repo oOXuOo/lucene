@@ -16,20 +16,20 @@
     <modules>
         <module>core</module>
         <!--<module>backward-codecs</module>-->
-        <!--<module>codecs</module>-->
-        <!--<module>test-framework</module>-->
+        <module>codecs</module>
+        <module>test-framework</module>
         <!--<module>analysis</module>-->
         <!--<module>benchmark</module>-->
         <!--<module>classification</module>-->
         <module>demo</module>
         <!--<module>expressions</module>-->
-        <!--<module>facet</module>-->
+        <module>facet</module>
         <!--<module>grouping</module>-->
         <!--<module>highlighter</module>-->
         <!--<module>join</module>-->
         <!--<module>memory</module>-->
         <!--<module>misc</module>-->
-        <!--<module>queries</module>-->
+        <module>queries</module>
         <module>queryparser</module>
         <!--<module>replicator</module>-->
         <!--<module>sandbox</module>-->
@@ -39,7 +39,89 @@
         <!--<module>suggest</module>-->
     </modules>
 
-    <build>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-test-framework</artifactId>
+                <version>${project.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-analyzers-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-expressions</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-facet</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-sandbox</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-queries</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-queryparser</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-codecs</artifactId>
+                <version>${project.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>servlet-api</artifactId>
+                <version>2.4</version>
+            </dependency>
+            <dependency>
+                <groupId>org.antlr</groupId>
+                <artifactId>antlr4-runtime</artifactId>
+                <version>4.5.1-1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm</artifactId>
+                <version>5.1</version>
+            </dependency>
+            <dependency>
+                <groupId>org.ow2.asm</groupId>
+                <artifactId>asm-commons</artifactId>
+                <version>5.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.carrotsearch.randomizedtesting</groupId>
+                <artifactId>randomizedtesting-runner</artifactId>
+                <version>2.4.0</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.10</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+   <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
