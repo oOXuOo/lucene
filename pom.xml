@@ -16,8 +16,8 @@
     <modules>
         <module>core</module>
         <!--<module>backward-codecs</module>-->
-        <module>codecs</module>
-        <module>test-framework</module>
+        <!--<module>codecs</module>-->
+        <!--<module>test-framework</module>-->
         <!--<module>analysis</module>-->
         <!--<module>benchmark</module>-->
         <!--<module>classification</module>-->
@@ -44,6 +44,12 @@
             <dependency>
                 <groupId>org.apache.lucene</groupId>
                 <artifactId>lucene-test-framework</artifactId>
+                <version>${project.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-codecs</artifactId>
                 <version>${project.version}</version>
                 <scope>test</scope>
             </dependency>
@@ -81,12 +87,6 @@
                 <groupId>org.apache.lucene</groupId>
                 <artifactId>lucene-queryparser</artifactId>
                 <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-codecs</artifactId>
-                <version>${project.version}</version>
-                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>javax.servlet</groupId>

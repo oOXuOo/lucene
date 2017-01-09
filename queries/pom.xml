@@ -27,12 +27,12 @@
         </dependency>
         <dependency>
             <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-core</artifactId>
+            <artifactId>lucene-codecs</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-codecs</artifactId>
-            <scope>test</scope>
+            <artifactId>lucene-core</artifactId>
         </dependency>
     </dependencies>
 

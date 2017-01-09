@@ -27,6 +27,11 @@
         </dependency>
         <dependency>
             <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-codecs</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-core</artifactId>
         </dependency>
         <dependency>
@@ -36,11 +41,6 @@
         <dependency>
             <groupId>org.apache.lucene</groupId>
             <artifactId>lucene-sandbox</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.lucene</groupId>
-            <artifactId>lucene-codecs</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 
